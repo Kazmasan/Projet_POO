@@ -14,8 +14,11 @@ namespace ProjetPOO {
 	/// <summary>
 	/// Description résumée de Personnel
 	/// </summary>
+	/// 
+	
 	public ref class Personnel : public System::Windows::Forms::Form
 	{
+
 	public:
 		Personnel(void)
 		{
@@ -245,6 +248,10 @@ namespace ProjetPOO {
 			refresh("PIPO");
 
 	}
+		else
+		{
+			MessageBox::Show("Veuillez remplir tous les champs");
+		}
 	};
 
 
@@ -289,10 +296,14 @@ private: System::Void btn_update_Click(System::Object^ sender, System::EventArgs
 
 
 private: System::Void btn_delete_Click(System::Object^ sender, System::EventArgs^ e) {
+
 if (this->txt_id->Text != "") {
 		oCad->actionRows("delete from dbo.Personnel where IdPersonnel = " + this->txt_id->Text);
 		refresh("PIPO");
-	}
+	}else{
+MessageBox::Show("ID non fournit");
+}
+
 }
 
 
@@ -303,8 +314,15 @@ private: System::Void btn_affiche_Click(System::Object^ sender, System::EventArg
 		this->dgv_enr->DataMember = "PIPO";
 
 }
+	else
+	{
+		MessageBox::Show("ID non fournit");
+	}
 };
 
-};
-}
+
+};//fin class
+
+
+} //fin namespace
 
