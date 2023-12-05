@@ -1,4 +1,4 @@
-#include "MyForm.h"
+#include "Personnel.h"
 using namespace System;
 using namespace System::Windows::Forms;
 
@@ -8,6 +8,6 @@ int __clrcall WinMain(array<String^>^ args)
 {
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
-	ProjetPOO::MyForm monFormulaire;
+	ProjetPOO::Personnel monFormulaire;
 	Application::Run(% monFormulaire);
 }
