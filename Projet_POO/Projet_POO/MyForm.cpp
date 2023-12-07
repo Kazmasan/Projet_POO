@@ -1,13 +1,13 @@
-#include "MyForm.h"
-
+#include "Personnel.h"
 using namespace System;
 using namespace System::Windows::Forms;
 
-[STAThread]
 
-int main(array<String^>^ args) {
+[STAThreadAttribute]
+int __clrcall WinMain(array<String^>^ args)
+{
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
-	ProjetPOO::MyForm form;
-	Application::Run(%form);
+	ProjetPOO::Personnel monFormulaire;
+	Application::Run(% monFormulaire);
 }
