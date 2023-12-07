@@ -1,0 +1,7 @@
+C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\x64\Debug\Projet_POO.vcxproj.AssemblyReference.cache
+C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\x64\Debug\ProjetPOO.Personnel.resources
+C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\x64\Debug\Projet_POO.vcxproj.GenerateResource.cache
+C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\x64\Debug\Projet_POO.vcxproj.AssemblyReference.cache
+C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\x64\Debug\ProjetPOO.MyForm.resources
+C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\x64\Debug\Projet_POO.vcxproj.GenerateResource.cache
+C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\x64\Debug\ProjetPOO.GestionPersonnel.resources

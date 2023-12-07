@@ -1,0 +1,43 @@
+﻿  GestionPersonnel.cpp
+C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\Gestion.h(2,11): warning C4570: 'Gestion' : n'est pas explicitement déclaré comme abstract mais comporte des fonctions abstract
+  (compiler le fichier source 'GestionPersonnel.cpp')
+  C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\Gestion.h(2,11):
+  'void Gestion::afficher(System::Windows::Forms::DataGridView ^)' : est abstrait
+  C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\Gestion.h(6,15):
+  voir la déclaration de 'Gestion::afficher'
+  C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\Gestion.h(2,11):
+  'void Gestion::ajouter(void)' : est abstrait
+  C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\Gestion.h(7,15):
+  voir la déclaration de 'Gestion::ajouter'
+  C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\Gestion.h(2,11):
+  'void Gestion::modifier(void)' : est abstrait
+  C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\Gestion.h(8,15):
+  voir la déclaration de 'Gestion::modifier'
+  C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\Gestion.h(2,11):
+  'void Gestion::supprimer(void)' : est abstrait
+  C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\Gestion.h(9,15):
+  voir la déclaration de 'Gestion::supprimer'
+  
+  MyForm.cpp
+C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\Gestion.h(2,11): warning C4570: 'Gestion' : n'est pas explicitement déclaré comme abstract mais comporte des fonctions abstract
+  (compiler le fichier source 'MyForm.cpp')
+  C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\Gestion.h(2,11):
+  'void Gestion::afficher(System::Windows::Forms::DataGridView ^)' : est abstrait
+  C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\Gestion.h(6,15):
+  voir la déclaration de 'Gestion::afficher'
+  C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\Gestion.h(2,11):
+  'void Gestion::ajouter(void)' : est abstrait
+  C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\Gestion.h(7,15):
+  voir la déclaration de 'Gestion::ajouter'
+  C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\Gestion.h(2,11):
+  'void Gestion::modifier(void)' : est abstrait
+  C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\Gestion.h(8,15):
+  voir la déclaration de 'Gestion::modifier'
+  C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\Gestion.h(2,11):
+  'void Gestion::supprimer(void)' : est abstrait
+  C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\Gestion.h(9,15):
+  voir la déclaration de 'Gestion::supprimer'
+  
+  Génération de code en cours...
+  CLDataBase.obj : module MSIL détecté ; liens incrémentiels désactivés pour MSIL ; édition de liens complète en cours
+  Projet_POO.vcxproj -> C:\Users\Loan\Source\Repos\Projet_POO\Projet_POO\x64\Debug\Projet_POO.exe
