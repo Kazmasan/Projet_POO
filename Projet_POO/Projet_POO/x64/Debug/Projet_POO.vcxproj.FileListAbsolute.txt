@@ -6,3 +6,4 @@ C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\x64\Debug\Projet_POO
 C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\x64\Debug\ProjetPOO.GestionPersonnel.resources
 C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\x64\Debug\ProjetPOO.GestionPersonnel.resources
 C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\x64\Debug\ProjetPOO.MyForm.resources
+C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\x64\Debug\ProjetPOO.GestionClient.resources

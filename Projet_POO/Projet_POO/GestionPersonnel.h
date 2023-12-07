@@ -67,7 +67,7 @@ namespace ProjetPOO {
 			// 
 			this->button1->AutoSize = true;
 			this->button1->Location = System::Drawing::Point(16, 25);
-			this->button1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->button1->Margin = System::Windows::Forms::Padding(2);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(56, 23);
 			this->button1->TabIndex = 0;
@@ -81,8 +81,8 @@ namespace ProjetPOO {
 			this->dataGridView1->AutoSizeColumnsMode = System::Windows::Forms::DataGridViewAutoSizeColumnsMode::AllCells;
 			this->dataGridView1->AutoSizeRowsMode = System::Windows::Forms::DataGridViewAutoSizeRowsMode::AllCells;
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView1->Location = System::Drawing::Point(16, 49);
-			this->dataGridView1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->dataGridView1->Location = System::Drawing::Point(16, 50);
+			this->dataGridView1->Margin = System::Windows::Forms::Padding(2);
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->RowHeadersWidth = 51;
 			this->dataGridView1->RowTemplate->Height = 24;
@@ -95,7 +95,7 @@ namespace ProjetPOO {
 			this->btn_refresh->AutoSize = true;
 			this->btn_refresh->AutoSizeMode = System::Windows::Forms::AutoSizeMode::GrowAndShrink;
 			this->btn_refresh->Location = System::Drawing::Point(279, 25);
-			this->btn_refresh->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->btn_refresh->Margin = System::Windows::Forms::Padding(2);
 			this->btn_refresh->Name = L"btn_refresh";
 			this->btn_refresh->Size = System::Drawing::Size(54, 23);
 			this->btn_refresh->TabIndex = 2;
@@ -106,7 +106,7 @@ namespace ProjetPOO {
 			// textBox1
 			// 
 			this->textBox1->Location = System::Drawing::Point(16, 246);
-			this->textBox1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->textBox1->Margin = System::Windows::Forms::Padding(2);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(76, 20);
 			this->textBox1->TabIndex = 3;
@@ -117,12 +117,11 @@ namespace ProjetPOO {
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoSize = true;
-			this->AutoSizeMode = System::Windows::Forms::AutoSizeMode::GrowAndShrink;
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->btn_refresh);
 			this->Controls->Add(this->dataGridView1);
 			this->Controls->Add(this->button1);
-			this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->Margin = System::Windows::Forms::Padding(2);
 			this->Name = L"GestionPersonnel";
 			this->Size = System::Drawing::Size(335, 268);
 			this->Load += gcnew System::EventHandler(this, &GestionPersonnel::GestionPersonnel_Load);
@@ -139,7 +138,7 @@ namespace ProjetPOO {
 	}
 	private: System::Void btn_refresh_Click(System::Object^ sender, System::EventArgs^ e) {
 		Personnel^ personnel = gcnew Personnel;
-		personnel->afficher(dataGridView1);
+		personnel->rafraichir(dataGridView1);
 	}
 	private:System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 	}

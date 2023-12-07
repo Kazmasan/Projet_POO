@@ -1,5 +1,6 @@
 #pragma once
 #include "GestionPersonnel.h"
+#include "GestionClient.h"
 
 namespace ProjetPOO {
 
@@ -36,6 +37,7 @@ namespace ProjetPOO {
 			}
 		}
 	private: System::Windows::Forms::Button^ btn_personnel;
+	private: System::Windows::Forms::Button^ btn_clients;
 	protected:
 
 
@@ -55,6 +57,7 @@ namespace ProjetPOO {
 		void InitializeComponent(void)
 		{
 			this->btn_personnel = (gcnew System::Windows::Forms::Button());
+			this->btn_clients = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// btn_personnel
@@ -69,11 +72,24 @@ namespace ProjetPOO {
 			this->btn_personnel->UseVisualStyleBackColor = true;
 			this->btn_personnel->Click += gcnew System::EventHandler(this, &MyForm::btn_personnel_Click);
 			// 
+			// btn_clients
+			// 
+			this->btn_clients->AutoSize = true;
+			this->btn_clients->Location = System::Drawing::Point(138, 125);
+			this->btn_clients->Margin = System::Windows::Forms::Padding(2);
+			this->btn_clients->Name = L"btn_clients";
+			this->btn_clients->Size = System::Drawing::Size(121, 23);
+			this->btn_clients->TabIndex = 1;
+			this->btn_clients->Text = L"Gestion des clients";
+			this->btn_clients->UseVisualStyleBackColor = true;
+			this->btn_clients->Click += gcnew System::EventHandler(this, &MyForm::btn_clients_Click);
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(415, 344);
+			this->Controls->Add(this->btn_clients);
 			this->Controls->Add(this->btn_personnel);
 			this->Margin = System::Windows::Forms::Padding(2);
 			this->Name = L"MyForm";
@@ -105,5 +121,24 @@ namespace ProjetPOO {
 
 	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
 	}
-	};
+	private: System::Void btn_clients_Click(System::Object^ sender, System::EventArgs^ e) {
+		Gestionclient^ gestionClient = gcnew Gestionclient();
+
+		// Ajoutez la fenêtre gestionPersonnel à MyForm
+		this->Controls->Add(gestionClient);
+
+		// Configurez la position et la taille de gestionPersonnel
+		gestionClient->Location = System::Drawing::Point(0, 0);
+		gestionClient->Size = this->ClientSize;
+
+		// Définissez la propriété AutoSize de MyForm sur true
+		this->AutoSize = true;
+
+		// Amenez la fenêtre gestionPersonnel au premier plan
+		gestionClient->BringToFront();
+
+		// Affichez la fenêtre gestionPersonnel
+		gestionClient->Show();
+	}
+};
 }
