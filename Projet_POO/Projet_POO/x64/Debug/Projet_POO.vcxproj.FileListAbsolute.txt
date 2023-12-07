@@ -1,3 +1,0 @@
-C:\Users\kazma\source\repos\Projet_POO\Projet_POO\Projet_POO\x64\Debug\Projet_POO.vcxproj.AssemblyReference.cache
-C:\Users\kazma\source\repos\Projet_POO\Projet_POO\Projet_POO\x64\Debug\ProjetPOO.MyForm.resources
-C:\Users\kazma\source\repos\Projet_POO\Projet_POO\Projet_POO\x64\Debug\Projet_POO.vcxproj.GenerateResource.cache
