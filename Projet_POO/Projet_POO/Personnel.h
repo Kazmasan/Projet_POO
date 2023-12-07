@@ -4,10 +4,21 @@
 ref class Personnel : public Gestion
 {
 public:
-	//Je veux rajouter la méthode afficher de la classe Gestion mais qui prend en paramètre data un objet DataGrid
-	virtual void afficher(System::Windows::Forms::DataGridView^ data) override;
+	virtual void afficher() override;
+	virtual void rafraichir(System::Windows::Forms::DataGridView^ data) override;
 	virtual void ajouter() override;
 	virtual void modifier() override;
 	virtual void supprimer() override;
+	void setNom(System::String^ nom);
+	void setPrenom(System::String^ prenom);
+	void setDateEmbauche(System::String^ dateEmbauche);
+	void setSuperieur(System::String^ superieur);
+	void setID(System::String^ID);
+private:
+	System::String^ nom;
+	System::String^ prenom;
+	System::String^ dateEmbauche;
+	System::String^ superieur;
+	System::String^ ID;
 };
 

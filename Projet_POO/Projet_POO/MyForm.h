@@ -60,10 +60,10 @@ namespace ProjetPOO {
 			// btn_personnel
 			// 
 			this->btn_personnel->AutoSize = true;
-			this->btn_personnel->Location = System::Drawing::Point(138, 84);
-			this->btn_personnel->Margin = System::Windows::Forms::Padding(2);
+			this->btn_personnel->Location = System::Drawing::Point(169, 91);
+			this->btn_personnel->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->btn_personnel->Name = L"btn_personnel";
-			this->btn_personnel->Size = System::Drawing::Size(121, 23);
+			this->btn_personnel->Size = System::Drawing::Size(161, 28);
 			this->btn_personnel->TabIndex = 0;
 			this->btn_personnel->Text = L"Gestion du personnel";
 			this->btn_personnel->UseVisualStyleBackColor = true;
@@ -71,11 +71,11 @@ namespace ProjetPOO {
 			// 
 			// MyForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(415, 344);
+			this->ClientSize = System::Drawing::Size(497, 513);
 			this->Controls->Add(this->btn_personnel);
-			this->Margin = System::Windows::Forms::Padding(2);
+			this->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
