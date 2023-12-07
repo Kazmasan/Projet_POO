@@ -59,9 +59,11 @@ namespace ProjetPOO {
 			// 
 			// btn_personnel
 			// 
-			this->btn_personnel->Location = System::Drawing::Point(184, 104);
+			this->btn_personnel->AutoSize = true;
+			this->btn_personnel->Location = System::Drawing::Point(138, 84);
+			this->btn_personnel->Margin = System::Windows::Forms::Padding(2);
 			this->btn_personnel->Name = L"btn_personnel";
-			this->btn_personnel->Size = System::Drawing::Size(75, 23);
+			this->btn_personnel->Size = System::Drawing::Size(121, 23);
 			this->btn_personnel->TabIndex = 0;
 			this->btn_personnel->Text = L"Gestion du personnel";
 			this->btn_personnel->UseVisualStyleBackColor = true;
@@ -69,22 +71,39 @@ namespace ProjetPOO {
 			// 
 			// MyForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(439, 424);
+			this->ClientSize = System::Drawing::Size(415, 344);
 			this->Controls->Add(this->btn_personnel);
+			this->Margin = System::Windows::Forms::Padding(2);
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
+			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->ResumeLayout(false);
+			this->PerformLayout();
 
 		}
 	private: System::Void btn_personnel_Click(System::Object^ sender, System::EventArgs^ e) {
 		GestionPersonnel^ gestionPersonnel = gcnew GestionPersonnel();
+
+		// Ajoutez la fenêtre gestionPersonnel à MyForm
 		this->Controls->Add(gestionPersonnel);
-		gestionPersonnel->BringToFront();
+
+		// Configurez la position et la taille de gestionPersonnel
 		gestionPersonnel->Location = System::Drawing::Point(0, 0);
 		gestionPersonnel->Size = this->ClientSize;
+
+		// Définissez la propriété AutoSize de MyForm sur true
+		this->AutoSize = true;
+
+		// Amenez la fenêtre gestionPersonnel au premier plan
+		gestionPersonnel->BringToFront();
+
+		// Affichez la fenêtre gestionPersonnel
 		gestionPersonnel->Show();
+	}
+
+	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
 	}
 	};
 }
