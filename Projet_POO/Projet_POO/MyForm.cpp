@@ -8,6 +8,6 @@ int __clrcall WinMain(array<String^>^ args)
 {
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
-	ProjetPOO::MainWindow monFormulaire;
+	ProjetPOO::Personnel monFormulaire;
 	Application::Run(% monFormulaire);
 }
