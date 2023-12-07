@@ -1,0 +1,10 @@
+﻿################################################################################
+# Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
+################################################################################
+
+/Projet_POO/.vs/Projet_POO/FileContentIndex
+/.vs/Projet_POO/v17
+*.json
+/.vs/Projet_POO/FileContentIndex
+*.sqlite
+/Projet_POO/.vs/Projet_POO/v17
