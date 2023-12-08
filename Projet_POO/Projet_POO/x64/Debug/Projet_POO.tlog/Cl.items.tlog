@@ -1,8 +1,15 @@
-C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\CLDataBase.cpp;C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\x64\Debug\CLDataBase.obj
-C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\Client.cpp;C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\x64\Debug\Client.obj
-C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\Gestion.cpp;C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\x64\Debug\Gestion.obj
-C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\Gestionclient.cpp;C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\x64\Debug\Gestionclient.obj
-C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\GestionPersonnel.cpp;C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\x64\Debug\GestionPersonnel.obj
-C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\MyForm.cpp;C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\x64\Debug\MyForm.obj
-C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\Personnel.cpp;C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\x64\Debug\Personnel.obj
-C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\x64\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cpp;C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\x64\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.obj
+<<<<<<< Updated upstream
+C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\CLDataBase.cpp;C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\x64\Debug\CLDataBase.obj
+C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\Gestion.cpp;C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\x64\Debug\Gestion.obj
+C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\GestionPersonnel.cpp;C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\x64\Debug\GestionPersonnel.obj
+C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\MyForm.cpp;C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\x64\Debug\MyForm.obj
+C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\Personnel.cpp;C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\x64\Debug\Personnel.obj
+C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\x64\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cpp;C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\x64\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.obj
+=======
+C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\CLDataBase.cpp;C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\x64\Debug\CLDataBase.obj
+C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\Gestion.cpp;C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\x64\Debug\Gestion.obj
+C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\GestionPersonnel.cpp;C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\x64\Debug\GestionPersonnel.obj
+C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\MyForm.cpp;C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\x64\Debug\MyForm.obj
+C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\Personnel.cpp;C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\x64\Debug\Personnel.obj
+C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\x64\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cpp;C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\x64\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.obj
+>>>>>>> Stashed changes

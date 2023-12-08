@@ -2,7 +2,7 @@
 
 CLDataBase::CLDataBase()
 {
-    connection = gcnew System::Data::SqlClient::SqlConnection("Initial Catalog =PIPO2;User ID =sa; Password=azerty");
+    connection = gcnew System::Data::SqlClient::SqlConnection("Data Source =DESKTOP-CABGTS7;Initial Catalog =PIPO2;User ID =sa; Password=azerty");
 }
 
 CLDataBase::~CLDataBase()
@@ -26,44 +26,6 @@ System::Data::DataSet^ CLDataBase::getDataSet(System::String^ sqlString)
     return dataSet;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 void CLDataBase::ExecuteQuery(System::String^ sqlString)
 {
     // Créer un objet Command
@@ -75,4 +37,3 @@ void CLDataBase::ExecuteQuery(System::String^ sqlString)
     // Exécuter la requête
     command->ExecuteNonQuery();
 }
-
