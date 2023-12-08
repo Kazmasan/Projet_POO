@@ -37,4 +37,3 @@ void CLDataBase::ExecuteQuery(System::String^ sqlString)
     // Exécuter la requête
     command->ExecuteNonQuery();
 }
-
