@@ -11,14 +11,16 @@ public:
 	virtual void supprimer() override;
 	void setNom(System::String^ nom);
 	void setPrenom(System::String^ prenom);
-	void setDateEmbauche(System::String^ dateEmbauche);
-	void setSuperieur(System::String^ superieur);
+	void setDate_embauche(System::String^ Date_embauche);
+	void setId_superieur(System::String^ Id_superieur);
 	void setID(System::String^ID);
+	void setAdresse(System::String^ adresse);
 private:
 	System::String^ nom;
 	System::String^ prenom;
-	System::String^ dateEmbauche;
-	System::String^ superieur;
+	System::String^ Date_embauche;
+	System::String^ Id_superieur;
 	System::String^ ID;
+	System::String^ adresse;
 };
 

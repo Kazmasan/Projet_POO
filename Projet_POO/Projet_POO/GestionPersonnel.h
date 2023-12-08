@@ -45,7 +45,7 @@ namespace ProjetPOO {
 	private: System::Windows::Forms::TextBox^ textBox_ID;
 
 	private: System::Windows::Forms::Label^ label1;
-	private: System::Windows::Forms::TextBox^ textBox_Id_Superieur;
+	private: System::Windows::Forms::TextBox^ textBox_Id_Id_superieur;
 	private: System::Windows::Forms::TextBox^ textBox_Prenom;
 
 
@@ -62,6 +62,10 @@ namespace ProjetPOO {
 	private: System::Windows::Forms::Button^ btn_modifier;
 	private: System::Windows::Forms::Button^ btn_supprimer;
 	private: System::Windows::Forms::Button^ btn_afficher;
+	private: System::Windows::Forms::Label^ adresse;
+	private: System::Windows::Forms::TextBox^ textBox_adresse;
+
+
 
 	protected:
 
@@ -83,7 +87,7 @@ namespace ProjetPOO {
 			this->btn_refresh = (gcnew System::Windows::Forms::Button());
 			this->textBox_ID = (gcnew System::Windows::Forms::TextBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->textBox_Id_Superieur = (gcnew System::Windows::Forms::TextBox());
+			this->textBox_Id_Id_superieur = (gcnew System::Windows::Forms::TextBox());
 			this->textBox_Prenom = (gcnew System::Windows::Forms::TextBox());
 			this->textBox_Date_Embauche = (gcnew System::Windows::Forms::TextBox());
 			this->textBox_Nom = (gcnew System::Windows::Forms::TextBox());
@@ -95,6 +99,8 @@ namespace ProjetPOO {
 			this->btn_modifier = (gcnew System::Windows::Forms::Button());
 			this->btn_supprimer = (gcnew System::Windows::Forms::Button());
 			this->btn_afficher = (gcnew System::Windows::Forms::Button());
+			this->adresse = (gcnew System::Windows::Forms::Label());
+			this->textBox_adresse = (gcnew System::Windows::Forms::TextBox());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -151,12 +157,12 @@ namespace ProjetPOO {
 			this->label1->Text = L"ID :";
 			this->label1->Click += gcnew System::EventHandler(this, &GestionPersonnel::label1_Click);
 			// 
-			// textBox_Id_Superieur
+			// textBox_Id_Id_superieur
 			// 
-			this->textBox_Id_Superieur->Location = System::Drawing::Point(115, 398);
-			this->textBox_Id_Superieur->Name = L"textBox_Id_Superieur";
-			this->textBox_Id_Superieur->Size = System::Drawing::Size(364, 22);
-			this->textBox_Id_Superieur->TabIndex = 6;
+			this->textBox_Id_Id_superieur->Location = System::Drawing::Point(115, 398);
+			this->textBox_Id_Id_superieur->Name = L"textBox_Id_Id_superieur";
+			this->textBox_Id_Id_superieur->Size = System::Drawing::Size(364, 22);
+			this->textBox_Id_Id_superieur->TabIndex = 6;
 			// 
 			// textBox_Prenom
 			// 
@@ -217,7 +223,7 @@ namespace ProjetPOO {
 			// 
 			// btn_ajouter
 			// 
-			this->btn_ajouter->Location = System::Drawing::Point(21, 486);
+			this->btn_ajouter->Location = System::Drawing::Point(21, 511);
 			this->btn_ajouter->Name = L"btn_ajouter";
 			this->btn_ajouter->Size = System::Drawing::Size(132, 23);
 			this->btn_ajouter->TabIndex = 14;
@@ -227,7 +233,7 @@ namespace ProjetPOO {
 			// 
 			// btn_modifier
 			// 
-			this->btn_modifier->Location = System::Drawing::Point(191, 486);
+			this->btn_modifier->Location = System::Drawing::Point(188, 511);
 			this->btn_modifier->Name = L"btn_modifier";
 			this->btn_modifier->Size = System::Drawing::Size(132, 23);
 			this->btn_modifier->TabIndex = 15;
@@ -237,7 +243,7 @@ namespace ProjetPOO {
 			// 
 			// btn_supprimer
 			// 
-			this->btn_supprimer->Location = System::Drawing::Point(357, 486);
+			this->btn_supprimer->Location = System::Drawing::Point(357, 511);
 			this->btn_supprimer->Name = L"btn_supprimer";
 			this->btn_supprimer->Size = System::Drawing::Size(132, 23);
 			this->btn_supprimer->TabIndex = 16;
@@ -247,7 +253,7 @@ namespace ProjetPOO {
 			// 
 			// btn_afficher
 			// 
-			this->btn_afficher->Location = System::Drawing::Point(21, 457);
+			this->btn_afficher->Location = System::Drawing::Point(21, 482);
 			this->btn_afficher->Name = L"btn_afficher";
 			this->btn_afficher->Size = System::Drawing::Size(468, 23);
 			this->btn_afficher->TabIndex = 17;
@@ -255,10 +261,28 @@ namespace ProjetPOO {
 			this->btn_afficher->UseVisualStyleBackColor = true;
 			this->btn_afficher->Click += gcnew System::EventHandler(this, &GestionPersonnel::btn_afficher_Click);
 			// 
+			// adresse
+			// 
+			this->adresse->AutoSize = true;
+			this->adresse->Location = System::Drawing::Point(18, 457);
+			this->adresse->Name = L"adresse";
+			this->adresse->Size = System::Drawing::Size(64, 16);
+			this->adresse->TabIndex = 18;
+			this->adresse->Text = L"Adresse :";
+			// 
+			// textBox_adresse
+			// 
+			this->textBox_adresse->Location = System::Drawing::Point(84, 454);
+			this->textBox_adresse->Name = L"textBox_adresse";
+			this->textBox_adresse->Size = System::Drawing::Size(395, 22);
+			this->textBox_adresse->TabIndex = 19;
+			// 
 			// GestionPersonnel
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->Controls->Add(this->textBox_adresse);
+			this->Controls->Add(this->adresse);
 			this->Controls->Add(this->btn_afficher);
 			this->Controls->Add(this->btn_supprimer);
 			this->Controls->Add(this->btn_modifier);
@@ -270,14 +294,14 @@ namespace ProjetPOO {
 			this->Controls->Add(this->textBox_Nom);
 			this->Controls->Add(this->textBox_Date_Embauche);
 			this->Controls->Add(this->textBox_Prenom);
-			this->Controls->Add(this->textBox_Id_Superieur);
+			this->Controls->Add(this->textBox_Id_Id_superieur);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->textBox_ID);
 			this->Controls->Add(this->btn_refresh);
 			this->Controls->Add(this->dataGridView1);
 			this->Controls->Add(this->btn_menu);
 			this->Name = L"GestionPersonnel";
-			this->Size = System::Drawing::Size(515, 530);
+			this->Size = System::Drawing::Size(507, 548);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
@@ -301,8 +325,9 @@ namespace ProjetPOO {
 		Personnel^ personnel = gcnew Personnel;
 		personnel->setNom(textBox_Nom->Text);
 		personnel->setPrenom(textBox_Prenom->Text);
-		personnel->setSuperieur(textBox_Id_Superieur->Text);
-		personnel->setDateEmbauche(textBox_Date_Embauche->Text);
+		personnel->setId_superieur(textBox_Id_Id_superieur->Text);
+		personnel->setDate_embauche(textBox_Date_Embauche->Text);
+		personnel->setAdresse(textBox_adresse->Text);
 		personnel->ajouter();
 		personnel->rafraichir(dataGridView1);
 	}
@@ -317,8 +342,9 @@ private: System::Void btn_modifier_Click(System::Object^ sender, System::EventAr
 	personnel->setID(textBox_ID->Text);
 	personnel->setNom(textBox_Nom->Text);
 	personnel->setPrenom(textBox_Prenom->Text);
-	personnel->setSuperieur(textBox_Id_Superieur->Text);
-	personnel->setDateEmbauche(textBox_Date_Embauche->Text);
+	personnel->setId_superieur(textBox_Id_Id_superieur->Text);
+	personnel->setDate_embauche(textBox_Date_Embauche->Text);
+	personnel->setAdresse(textBox_adresse->Text);
 	personnel->modifier();
 	personnel->rafraichir(dataGridView1);
 }
