@@ -141,6 +141,7 @@ namespace ProjetPOO {
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView1->Location = System::Drawing::Point(88, 58);
 			this->dataGridView1->Margin = System::Windows::Forms::Padding(2);
+			this->dataGridView1-> ReadOnly = true;
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->RowHeadersWidth = 51;
 			this->dataGridView1->RowTemplate->Height = 24;
@@ -235,7 +236,6 @@ namespace ProjetPOO {
 			this->lbl_id->Size = System::Drawing::Size(24, 13);
 			this->lbl_id->TabIndex = 15;
 			this->lbl_id->Text = L"ID :";
-			this->lbl_id->Click += gcnew System::EventHandler(this, &Gestionclient::label1_Click);
 			// 
 			// lbl_nom
 			// 
@@ -254,7 +254,6 @@ namespace ProjetPOO {
 			this->lbl_prenom->Size = System::Drawing::Size(49, 13);
 			this->lbl_prenom->TabIndex = 17;
 			this->lbl_prenom->Text = L"Prenom :";
-			this->lbl_prenom->Click += gcnew System::EventHandler(this, &Gestionclient::label3_Click);
 			// 
 			// lbl_anniv
 			// 
@@ -297,19 +296,13 @@ namespace ProjetPOO {
 			this->Controls->Add(this->btn_menu);
 			this->Name = L"Gestionclient";
 			this->Size = System::Drawing::Size(572, 415);
-			this->Load += gcnew System::EventHandler(this, &Gestionclient::Gestionclient_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
 		}
 #pragma endregion
-	private: System::Void Gestionclient_Load(System::Object^ sender, System::EventArgs^ e) {
-	}
-private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e) {
-}
+
 private: System::Void btn_affiche_Click(System::Object^ sender, System::EventArgs^ e) {
 
 
@@ -364,7 +357,7 @@ private: System::Void btn_suppr_Click(System::Object^ sender, System::EventArgs^
 }
 
 private: System::Void btn_modif_Click(System::Object^ sender, System::EventArgs^ e) {
-	if (txt_id->Text != "" && txt_nom->Text != "" && txt_prenom->Text != "" && txt_anniv->Text != "")
+	if (txt_id->Text != "" && ( txt_nom->Text != "" || txt_prenom->Text != "" || txt_anniv->Text != ""))
 	{
 		fctn->setId(txt_id->Text);
 		fctn->setNom(txt_nom->Text);
@@ -392,7 +385,9 @@ private: System::Void dataGridView1_CellContentDoubleClick(System::Object^ sende
 		txt_id->Text = selectedRow->Cells["Num_Client"]->Value->ToString();  // Remplacez "Num_Client" par le nom de la colonne
 		txt_nom->Text = selectedRow->Cells["Nom"]->Value->ToString();  // Remplacez "Nom" par le nom de la colonne
 		txt_prenom->Text = selectedRow->Cells["Prenom"]->Value->ToString();  // Remplacez "Prenom" par le nom de la colonne
-		txt_anniv->Text = selectedRow->Cells["Date_naissance"]->Value->ToString();  // Remplacez "Date_naissance" par le nom de la colonne
+		String^ date = selectedRow->Cells["Date_naissance"]->Value->ToString();  // Remplacez "Date_naissance" par le nom de la colonne
+		String^ texteTronque = date->Substring(0, date->Length - 9);
+		txt_anniv->Text = texteTronque;
 
 		
 

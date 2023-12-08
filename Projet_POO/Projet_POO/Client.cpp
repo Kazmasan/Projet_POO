@@ -31,6 +31,8 @@ void Client::afficher(System::Windows::Forms::DataGridView^ data)
         where = true;
     }
 
+    query += ";";
+
     System::Data::DataSet^ dataSet = database->getDataSet(query);
 
     data->DataSource = (dataSet->Tables->Count > 0) ? dataSet->Tables[0] : nullptr;
@@ -48,42 +50,41 @@ void Client::ajouter()
 void Client::modifier()
 {
     CLDataBase^ database = gcnew CLDataBase();
-    System::String^ query = "SELECT * FROM client";
-    bool^ where = false;
+    System::String^ query = "UPDATE Client SET ";
 
     if (nom != "")
     {
-        query += (where ? " AND " : " WHERE ") + "nom = '" + nom + "'";
-        where = true;
+        query += "nom = '" + nom + "' ";
     }
 
     if (prenom != "")
     {
-        query += (where ? " AND " : " WHERE ") + "prenom = '" + prenom + "'";
-        where = true;
+        query += "prenom = '" + prenom + "' ";
     }
 
     if (naissance != "")
     {
-        query += (where ? " AND " : " WHERE ") + "Date_naissance = '" + naissance + "'";
-        where = true;
-    }
+		query += "Date_naissance = '" + naissance + "' ";
+	}
 
-    query += "AND Num_Client = '" + id + "'";
-    database->ExecuteQuery(query);
+    // Assurez-vous que vous avez des conditions à mettre à jour
+        query += " WHERE Num_Client = '" + id + "';";
+        database->ExecuteQuery(query);
+    
 }
+
 
 void Client::supprimer()
 {
     CLDataBase^ database = gcnew CLDataBase();
-    System::String^ query = "DELETE FROM Client WHERE id = '" + id + "'";
+    System::String^ query = "DELETE FROM Client WHERE id = '" + id + "';";
     database->ExecuteQuery(query);
 }
 
 void Client::rafraichir(System::Windows::Forms::DataGridView^ data)
 {
     CLDataBase^ database = gcnew CLDataBase();
-    System::Data::DataSet^ dataSet = database->getDataSet("SELECT * FROM Client");
+    System::Data::DataSet^ dataSet = database->getDataSet("SELECT * FROM Client;");
 
     data->DataSource = (dataSet->Tables->Count > 0) ? dataSet->Tables[0] : nullptr;
 }
