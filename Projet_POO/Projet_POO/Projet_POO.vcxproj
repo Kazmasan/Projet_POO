@@ -121,14 +121,20 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CLDataBase.cpp" />
+    <ClCompile Include="Client.cpp" />
     <ClCompile Include="Gestion.cpp" />
+    <ClCompile Include="Gestionclient.cpp" />
     <ClCompile Include="GestionPersonnel.cpp" />
     <ClCompile Include="MyForm.cpp" />
     <ClCompile Include="Personnel.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CLDataBase.h" />
+    <ClInclude Include="Client.h" />
     <ClInclude Include="Gestion.h" />
+    <ClInclude Include="GestionClient.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
     <ClInclude Include="GestionPersonnel.h">
       <FileType>CppControl</FileType>
     </ClInclude>
@@ -138,6 +144,9 @@
     <ClInclude Include="Personnel.h" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="GestionClient.resx">
+      <DependentUpon>GestionClient.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GestionPersonnel.resx">
       <DependentUpon>GestionPersonnel.h</DependentUpon>
     </EmbeddedResource>
