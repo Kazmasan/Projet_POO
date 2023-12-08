@@ -23,4 +23,3 @@ private:
 	System::String^ ID;
 	System::String^ adresse;
 };
-

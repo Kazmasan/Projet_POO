@@ -9,4 +9,3 @@ public:
 	virtual void modifier() = 0;
 	virtual void supprimer() = 0;
 };
-

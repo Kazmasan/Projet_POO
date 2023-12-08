@@ -26,44 +26,6 @@ System::Data::DataSet^ CLDataBase::getDataSet(System::String^ sqlString)
     return dataSet;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 void CLDataBase::ExecuteQuery(System::String^ sqlString)
 {
     // Créer un objet Command
@@ -75,4 +37,3 @@ void CLDataBase::ExecuteQuery(System::String^ sqlString)
     // Exécuter la requête
     command->ExecuteNonQuery();
 }
-
