@@ -4,7 +4,7 @@
 ref class Personnel : public Gestion
 {
 public:
-	virtual void afficher() override;
+	virtual void afficher(System::Windows::Forms::DataGridView^ data) override;
 	virtual void rafraichir(System::Windows::Forms::DataGridView^ data) override;
 	virtual void ajouter() override;
 	virtual void modifier() override;

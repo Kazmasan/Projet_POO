@@ -253,6 +253,7 @@ namespace ProjetPOO {
 			this->btn_afficher->TabIndex = 17;
 			this->btn_afficher->Text = L"Rechercher";
 			this->btn_afficher->UseVisualStyleBackColor = true;
+			this->btn_afficher->Click += gcnew System::EventHandler(this, &GestionPersonnel::btn_afficher_Click);
 			// 
 			// GestionPersonnel
 			// 
@@ -320,6 +321,11 @@ private: System::Void btn_modifier_Click(System::Object^ sender, System::EventAr
 	personnel->setDateEmbauche(textBox_Date_Embauche->Text);
 	personnel->modifier();
 	personnel->rafraichir(dataGridView1);
+}
+private: System::Void btn_afficher_Click(System::Object^ sender, System::EventArgs^ e) {
+	Personnel^ personnel = gcnew Personnel;
+	personnel->setID(textBox_ID->Text);
+	personnel->afficher(dataGridView1);
 }
 };
 }
