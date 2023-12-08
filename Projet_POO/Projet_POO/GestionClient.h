@@ -114,20 +114,18 @@ namespace ProjetPOO {
 			// 
 			// txt_id
 			// 
-			this->txt_id->Location = System::Drawing::Point(65, 288);
-			this->txt_id->Margin = System::Windows::Forms::Padding(2);
+			this->txt_id->Location = System::Drawing::Point(98, 443);
 			this->txt_id->Name = L"txt_id";
-			this->txt_id->Size = System::Drawing::Size(56, 20);
+			this->txt_id->Size = System::Drawing::Size(82, 26);
 			this->txt_id->TabIndex = 7;
 			// 
 			// btn_refresh
 			// 
 			this->btn_refresh->AutoSize = true;
 			this->btn_refresh->AutoSizeMode = System::Windows::Forms::AutoSizeMode::GrowAndShrink;
-			this->btn_refresh->Location = System::Drawing::Point(351, 33);
-			this->btn_refresh->Margin = System::Windows::Forms::Padding(2);
+			this->btn_refresh->Location = System::Drawing::Point(526, 51);
 			this->btn_refresh->Name = L"btn_refresh";
-			this->btn_refresh->Size = System::Drawing::Size(54, 23);
+			this->btn_refresh->Size = System::Drawing::Size(76, 30);
 			this->btn_refresh->TabIndex = 6;
 			this->btn_refresh->Text = L"Refresh";
 			this->btn_refresh->UseVisualStyleBackColor = true;
@@ -139,13 +137,12 @@ namespace ProjetPOO {
 			this->dataGridView1->AutoSizeColumnsMode = System::Windows::Forms::DataGridViewAutoSizeColumnsMode::AllCells;
 			this->dataGridView1->AutoSizeRowsMode = System::Windows::Forms::DataGridViewAutoSizeRowsMode::AllCells;
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView1->Location = System::Drawing::Point(88, 58);
-			this->dataGridView1->Margin = System::Windows::Forms::Padding(2);
-			this->dataGridView1-> ReadOnly = true;
+			this->dataGridView1->Location = System::Drawing::Point(132, 89);
 			this->dataGridView1->Name = L"dataGridView1";
+			this->dataGridView1->ReadOnly = true;
 			this->dataGridView1->RowHeadersWidth = 51;
 			this->dataGridView1->RowTemplate->Height = 24;
-			this->dataGridView1->Size = System::Drawing::Size(317, 192);
+			this->dataGridView1->Size = System::Drawing::Size(476, 295);
 			this->dataGridView1->TabIndex = 5;
 			this->dataGridView1->CellContentDoubleClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &Gestionclient::dataGridView1_CellContentDoubleClick);
 			// 
@@ -155,10 +152,9 @@ namespace ProjetPOO {
 				| System::Windows::Forms::AnchorStyles::Left)
 				| System::Windows::Forms::AnchorStyles::Right));
 			this->btn_menu->AutoSize = true;
-			this->btn_menu->Location = System::Drawing::Point(88, 33);
-			this->btn_menu->Margin = System::Windows::Forms::Padding(2);
+			this->btn_menu->Location = System::Drawing::Point(132, 51);
 			this->btn_menu->Name = L"btn_menu";
-			this->btn_menu->Size = System::Drawing::Size(56, 23);
+			this->btn_menu->Size = System::Drawing::Size(84, 35);
 			this->btn_menu->TabIndex = 4;
 			this->btn_menu->Text = L"Menu";
 			this->btn_menu->UseVisualStyleBackColor = true;
@@ -166,9 +162,10 @@ namespace ProjetPOO {
 			// 
 			// btn_affiche
 			// 
-			this->btn_affiche->Location = System::Drawing::Point(88, 255);
+			this->btn_affiche->Location = System::Drawing::Point(132, 392);
+			this->btn_affiche->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->btn_affiche->Name = L"btn_affiche";
-			this->btn_affiche->Size = System::Drawing::Size(77, 23);
+			this->btn_affiche->Size = System::Drawing::Size(116, 35);
 			this->btn_affiche->TabIndex = 8;
 			this->btn_affiche->Text = L"Afficher";
 			this->btn_affiche->UseVisualStyleBackColor = true;
@@ -176,9 +173,10 @@ namespace ProjetPOO {
 			// 
 			// btn_ajouter
 			// 
-			this->btn_ajouter->Location = System::Drawing::Point(171, 255);
+			this->btn_ajouter->Location = System::Drawing::Point(256, 392);
+			this->btn_ajouter->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->btn_ajouter->Name = L"btn_ajouter";
-			this->btn_ajouter->Size = System::Drawing::Size(79, 23);
+			this->btn_ajouter->Size = System::Drawing::Size(118, 35);
 			this->btn_ajouter->TabIndex = 9;
 			this->btn_ajouter->Text = L"Ajouter";
 			this->btn_ajouter->UseVisualStyleBackColor = true;
@@ -186,9 +184,10 @@ namespace ProjetPOO {
 			// 
 			// btn_modif
 			// 
-			this->btn_modif->Location = System::Drawing::Point(256, 255);
+			this->btn_modif->Location = System::Drawing::Point(384, 392);
+			this->btn_modif->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->btn_modif->Name = L"btn_modif";
-			this->btn_modif->Size = System::Drawing::Size(73, 23);
+			this->btn_modif->Size = System::Drawing::Size(110, 35);
 			this->btn_modif->TabIndex = 10;
 			this->btn_modif->Text = L"Modifier";
 			this->btn_modif->UseVisualStyleBackColor = true;
@@ -196,9 +195,10 @@ namespace ProjetPOO {
 			// 
 			// btn_suppr
 			// 
-			this->btn_suppr->Location = System::Drawing::Point(335, 255);
+			this->btn_suppr->Location = System::Drawing::Point(502, 392);
+			this->btn_suppr->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->btn_suppr->Name = L"btn_suppr";
-			this->btn_suppr->Size = System::Drawing::Size(70, 23);
+			this->btn_suppr->Size = System::Drawing::Size(105, 35);
 			this->btn_suppr->TabIndex = 11;
 			this->btn_suppr->Text = L"Supprimer";
 			this->btn_suppr->UseVisualStyleBackColor = true;
@@ -206,76 +206,78 @@ namespace ProjetPOO {
 			// 
 			// txt_nom
 			// 
-			this->txt_nom->Location = System::Drawing::Point(106, 316);
-			this->txt_nom->Margin = System::Windows::Forms::Padding(2);
+			this->txt_nom->Location = System::Drawing::Point(159, 486);
 			this->txt_nom->Name = L"txt_nom";
-			this->txt_nom->Size = System::Drawing::Size(162, 20);
+			this->txt_nom->Size = System::Drawing::Size(241, 26);
 			this->txt_nom->TabIndex = 12;
 			// 
 			// txt_anniv
 			// 
-			this->txt_anniv->Location = System::Drawing::Point(106, 364);
-			this->txt_anniv->Margin = System::Windows::Forms::Padding(2);
+			this->txt_anniv->Location = System::Drawing::Point(159, 560);
 			this->txt_anniv->Name = L"txt_anniv";
-			this->txt_anniv->Size = System::Drawing::Size(162, 20);
+			this->txt_anniv->Size = System::Drawing::Size(241, 26);
 			this->txt_anniv->TabIndex = 13;
 			// 
 			// txt_prenom
 			// 
-			this->txt_prenom->Location = System::Drawing::Point(106, 340);
-			this->txt_prenom->Margin = System::Windows::Forms::Padding(2);
+			this->txt_prenom->Location = System::Drawing::Point(159, 523);
 			this->txt_prenom->Name = L"txt_prenom";
-			this->txt_prenom->Size = System::Drawing::Size(162, 20);
+			this->txt_prenom->Size = System::Drawing::Size(241, 26);
 			this->txt_prenom->TabIndex = 14;
 			// 
 			// lbl_id
 			// 
 			this->lbl_id->AutoSize = true;
-			this->lbl_id->Location = System::Drawing::Point(26, 291);
+			this->lbl_id->Location = System::Drawing::Point(39, 448);
+			this->lbl_id->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->lbl_id->Name = L"lbl_id";
-			this->lbl_id->Size = System::Drawing::Size(24, 13);
+			this->lbl_id->Size = System::Drawing::Size(34, 20);
 			this->lbl_id->TabIndex = 15;
 			this->lbl_id->Text = L"ID :";
 			// 
 			// lbl_nom
 			// 
 			this->lbl_nom->AutoSize = true;
-			this->lbl_nom->Location = System::Drawing::Point(62, 319);
+			this->lbl_nom->Location = System::Drawing::Point(93, 491);
+			this->lbl_nom->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->lbl_nom->Name = L"lbl_nom";
-			this->lbl_nom->Size = System::Drawing::Size(29, 13);
+			this->lbl_nom->Size = System::Drawing::Size(42, 20);
 			this->lbl_nom->TabIndex = 16;
 			this->lbl_nom->Text = L"Nom";
 			// 
 			// lbl_prenom
 			// 
 			this->lbl_prenom->AutoSize = true;
-			this->lbl_prenom->Location = System::Drawing::Point(42, 343);
+			this->lbl_prenom->Location = System::Drawing::Point(63, 528);
+			this->lbl_prenom->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->lbl_prenom->Name = L"lbl_prenom";
-			this->lbl_prenom->Size = System::Drawing::Size(49, 13);
+			this->lbl_prenom->Size = System::Drawing::Size(72, 20);
 			this->lbl_prenom->TabIndex = 17;
 			this->lbl_prenom->Text = L"Prenom :";
 			// 
 			// lbl_anniv
 			// 
 			this->lbl_anniv->AutoSize = true;
-			this->lbl_anniv->Location = System::Drawing::Point(3, 367);
+			this->lbl_anniv->Location = System::Drawing::Point(4, 565);
+			this->lbl_anniv->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->lbl_anniv->Name = L"lbl_anniv";
-			this->lbl_anniv->Size = System::Drawing::Size(98, 13);
+			this->lbl_anniv->Size = System::Drawing::Size(145, 20);
 			this->lbl_anniv->TabIndex = 18;
 			this->lbl_anniv->Text = L"Date d\'anniversaire";
 			// 
 			// indic_date
 			// 
 			this->indic_date->AutoSize = true;
-			this->indic_date->Location = System::Drawing::Point(12, 380);
+			this->indic_date->Location = System::Drawing::Point(18, 585);
+			this->indic_date->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->indic_date->Name = L"indic_date";
-			this->indic_date->Size = System::Drawing::Size(69, 13);
+			this->indic_date->Size = System::Drawing::Size(105, 20);
 			this->indic_date->TabIndex = 19;
 			this->indic_date->Text = L"AAAA-MM-JJ";
 			// 
 			// Gestionclient
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoSize = true;
 			this->Controls->Add(this->indic_date);
@@ -294,8 +296,9 @@ namespace ProjetPOO {
 			this->Controls->Add(this->btn_refresh);
 			this->Controls->Add(this->dataGridView1);
 			this->Controls->Add(this->btn_menu);
+			this->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->Name = L"Gestionclient";
-			this->Size = System::Drawing::Size(572, 415);
+			this->Size = System::Drawing::Size(858, 638);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
@@ -388,12 +391,7 @@ private: System::Void dataGridView1_CellContentDoubleClick(System::Object^ sende
 		String^ date = selectedRow->Cells["Date_naissance"]->Value->ToString();  // Remplacez "Date_naissance" par le nom de la colonne
 		String^ texteTronque = date->Substring(0, date->Length - 9);
 		txt_anniv->Text = texteTronque;
-
-		
-
 	}
 }
-
-
 };
 }

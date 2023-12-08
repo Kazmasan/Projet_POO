@@ -54,12 +54,12 @@ void Client::modifier()
 
     if (nom != "")
     {
-        query += "nom = '" + nom + "' ";
+        query += " Nom = '" + nom + "' ";
     }
 
     if (prenom != "")
     {
-        query += "prenom = '" + prenom + "' ";
+        query += " Prenom = '" + prenom + "' ";
     }
 
     if (naissance != "")
@@ -69,6 +69,8 @@ void Client::modifier()
 
     // Assurez-vous que vous avez des conditions à mettre à jour
         query += " WHERE Num_Client = '" + id + "';";
+
+        
         database->ExecuteQuery(query);
     
 }
