@@ -51,27 +51,34 @@ void Client::modifier()
 {
     CLDataBase^ database = gcnew CLDataBase();
     System::String^ query = "UPDATE Client SET ";
+    bool firstField = true;
 
-    if (nom != "")
+    if (!System::String::IsNullOrEmpty(this->nom))
     {
-        query += " Nom = '" + nom + "' ";
+        query += "Nom = '" + this->nom + "'";
+        firstField = false;
     }
 
-    if (prenom != "")
+    if (!System::String::IsNullOrEmpty(this->prenom))
     {
-        query += " Prenom = '" + prenom + "' ";
+        if (!firstField) query += ", ";
+        query += "Prenom = '" + this->prenom + "'";
+        firstField = false;
     }
 
-    if (naissance != "")
+    if (!System::String::IsNullOrEmpty(this->naissance))
     {
-		query += "Date_naissance = '" + naissance + "' ";
-	}
+        if (!firstField) query += ", ";
+        query += "Date_naissance = '" + this->naissance + "'";
+        firstField = false;
+    }
 
-    // Assurez-vous que vous avez des conditions à mettre à jour
-        query += " WHERE Num_Client = '" + id + "';";
+    // Ajouter la condition WHERE pour l'ID
+    query += " WHERE Num_client = " + this->id;
 
-        
+    // Exécuter la requête uniquement si au moins un champ est modifié
         database->ExecuteQuery(query);
+        System::Windows::Forms::MessageBox::Show("Client modifié avec succès.", "Succès", System::Windows::Forms::MessageBoxButtons::OK, System::Windows::Forms::MessageBoxIcon::Information);
     
 }
 

@@ -66,10 +66,10 @@ namespace ProjetPOO {
 			// btn_personnel
 			// 
 			this->btn_personnel->AutoSize = true;
-			this->btn_personnel->Location = System::Drawing::Point(169, 91);
+			this->btn_personnel->Location = System::Drawing::Point(207, 131);
 			this->btn_personnel->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->btn_personnel->Name = L"btn_personnel";
-			this->btn_personnel->Size = System::Drawing::Size(161, 28);
+			this->btn_personnel->Size = System::Drawing::Size(182, 35);
 			this->btn_personnel->TabIndex = 0;
 			this->btn_personnel->Text = L"Gestion du personnel";
 			this->btn_personnel->UseVisualStyleBackColor = true;
@@ -88,7 +88,7 @@ namespace ProjetPOO {
 			// 
 			// btn_stock
 			// 
-			this->btn_stock->Location = System::Drawing::Point(207, 261);
+			this->btn_stock->Location = System::Drawing::Point(207, 253);
 			this->btn_stock->Name = L"btn_stock";
 			this->btn_stock->Size = System::Drawing::Size(182, 35);
 			this->btn_stock->TabIndex = 2;

@@ -45,7 +45,7 @@ namespace ProjetPOO {
 	private: System::Windows::Forms::TextBox^ textBox_ID;
 
 	private: System::Windows::Forms::Label^ label1;
-	private: System::Windows::Forms::TextBox^ textBox_Id_Id_superieur;
+	private: System::Windows::Forms::TextBox^ textBox_Id_superieur;
 	private: System::Windows::Forms::TextBox^ textBox_Prenom;
 
 
@@ -87,7 +87,7 @@ namespace ProjetPOO {
 			this->btn_refresh = (gcnew System::Windows::Forms::Button());
 			this->textBox_ID = (gcnew System::Windows::Forms::TextBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->textBox_Id_Id_superieur = (gcnew System::Windows::Forms::TextBox());
+			this->textBox_Id_superieur = (gcnew System::Windows::Forms::TextBox());
 			this->textBox_Prenom = (gcnew System::Windows::Forms::TextBox());
 			this->textBox_Date_Embauche = (gcnew System::Windows::Forms::TextBox());
 			this->textBox_Nom = (gcnew System::Windows::Forms::TextBox());
@@ -121,11 +121,12 @@ namespace ProjetPOO {
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView1->Location = System::Drawing::Point(21, 60);
 			this->dataGridView1->Name = L"dataGridView1";
+			this->dataGridView1->ReadOnly = true;
 			this->dataGridView1->RowHeadersWidth = 51;
 			this->dataGridView1->RowTemplate->Height = 24;
 			this->dataGridView1->Size = System::Drawing::Size(468, 236);
 			this->dataGridView1->TabIndex = 1;
-			this->dataGridView1->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &GestionPersonnel::dataGridView1_CellContentClick);
+			this->dataGridView1->CellContentDoubleClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &GestionPersonnel::dataGridView1_CellContentDoubleClick);
 			// 
 			// btn_refresh
 			// 
@@ -157,12 +158,12 @@ namespace ProjetPOO {
 			this->label1->Text = L"ID :";
 			this->label1->Click += gcnew System::EventHandler(this, &GestionPersonnel::label1_Click);
 			// 
-			// textBox_Id_Id_superieur
+			// textBox_Id_superieur
 			// 
-			this->textBox_Id_Id_superieur->Location = System::Drawing::Point(115, 398);
-			this->textBox_Id_Id_superieur->Name = L"textBox_Id_Id_superieur";
-			this->textBox_Id_Id_superieur->Size = System::Drawing::Size(364, 22);
-			this->textBox_Id_Id_superieur->TabIndex = 6;
+			this->textBox_Id_superieur->Location = System::Drawing::Point(115, 398);
+			this->textBox_Id_superieur->Name = L"textBox_Id_superieur";
+			this->textBox_Id_superieur->Size = System::Drawing::Size(364, 22);
+			this->textBox_Id_superieur->TabIndex = 6;
 			// 
 			// textBox_Prenom
 			// 
@@ -294,12 +295,14 @@ namespace ProjetPOO {
 			this->Controls->Add(this->textBox_Nom);
 			this->Controls->Add(this->textBox_Date_Embauche);
 			this->Controls->Add(this->textBox_Prenom);
-			this->Controls->Add(this->textBox_Id_Id_superieur);
+			this->Controls->Add(this->textBox_Id_superieur);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->textBox_ID);
 			this->Controls->Add(this->btn_refresh);
 			this->Controls->Add(this->dataGridView1);
 			this->Controls->Add(this->btn_menu);
+			this->MaximumSize = System::Drawing::Size(507, 548);
+			this->MinimumSize = System::Drawing::Size(507, 548);
 			this->Name = L"GestionPersonnel";
 			this->Size = System::Drawing::Size(507, 548);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
@@ -325,7 +328,7 @@ namespace ProjetPOO {
 		Personnel^ personnel = gcnew Personnel;
 		personnel->setNom(textBox_Nom->Text);
 		personnel->setPrenom(textBox_Prenom->Text);
-		personnel->setId_superieur(textBox_Id_Id_superieur->Text);
+		personnel->setId_superieur(textBox_Id_superieur->Text);
 		personnel->setDate_embauche(textBox_Date_Embauche->Text);
 		personnel->setAdresse(textBox_adresse->Text);
 		personnel->ajouter();
@@ -342,7 +345,7 @@ private: System::Void btn_modifier_Click(System::Object^ sender, System::EventAr
 	personnel->setID(textBox_ID->Text);
 	personnel->setNom(textBox_Nom->Text);
 	personnel->setPrenom(textBox_Prenom->Text);
-	personnel->setId_superieur(textBox_Id_Id_superieur->Text);
+	personnel->setId_superieur(textBox_Id_superieur->Text);
 	personnel->setDate_embauche(textBox_Date_Embauche->Text);
 	personnel->setAdresse(textBox_adresse->Text);
 	personnel->modifier();
@@ -352,6 +355,23 @@ private: System::Void btn_afficher_Click(System::Object^ sender, System::EventAr
 	Personnel^ personnel = gcnew Personnel;
 	personnel->setID(textBox_ID->Text);
 	personnel->afficher(dataGridView1);
+}
+
+
+private: System::Void dataGridView1_CellContentDoubleClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
+	// Vérifiez si l'indice de la ligne est valide
+	if (e->RowIndex >= 0) {
+		// Récupérez la ligne entière
+		DataGridViewRow^ selectedRow = dataGridView1->Rows[e->RowIndex];
+
+		// Accédez aux valeurs de chaque cellule de la ligne
+		textBox_ID->Text = selectedRow->Cells["Id_Personnel"]->Value->ToString();  // Remplacez "Num_Client" par le nom de la colonne
+		textBox_Nom->Text = selectedRow->Cells["Nom"]->Value->ToString();  // Remplacez "Nom" par le nom de la colonne
+		textBox_Prenom->Text = selectedRow->Cells["Prenom"]->Value->ToString();  // Remplacez "Prenom" par le nom de la colonne
+		textBox_Id_superieur->Text = selectedRow->Cells["Id_superieur"]->Value->ToString();  // Remplacez "Id_superieur" par le nom de la colonne
+		textBox_Date_Embauche->Text = selectedRow->Cells["Date_embauche"]->Value->ToString();  // Remplacez "Date_embauche" par le nom de la colonne
+		textBox_adresse->Text = selectedRow->Cells["Adresse"]->Value->ToString();  // Remplacez "Adresse" par le nom de la colonne
+	}
 }
 };
 }
