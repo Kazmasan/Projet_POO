@@ -76,6 +76,7 @@ void Commande::modifier()
 
     if (!System::String::IsNullOrEmpty(this->date_emission))
     {
+        if (!firstField) query += ", ";
         query += "Date_emission = '" + this->date_emission + "'";
         firstField = false;
     }
@@ -90,7 +91,7 @@ void Commande::modifier()
     // Ajouter la condition WHERE pour l'ID
     query += " WHERE Ref_commande = " + "'" + this->ref_commande + "'";
 
-    
+    System::Windows::Forms::MessageBox::Show(query);
 
     // Exécuter la requête uniquement si au moins un champ est modifié
     if (!firstField)

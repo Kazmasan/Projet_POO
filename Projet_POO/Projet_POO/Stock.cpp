@@ -27,7 +27,7 @@ void Article::afficher(System::Windows::Forms::DataGridView^ data)
 
     if (ref_article != "")
     {
-        query += (where ? " AND" : "") + " ref_article = " + ref_article;
+        query += (where ? " AND" : "") + " Ref_produit = " + ref_article;
         where = true;
     }
 
@@ -42,7 +42,7 @@ void Article::afficher(System::Windows::Forms::DataGridView^ data)
 void Article::ajouter()
 {
     CLDataBase^ database = gcnew CLDataBase();
-    System::String^ query = "INSERT INTO Article (nom, quantite_article, nature) VALUES ('" + nom + "', '" + quantite_article + "', '" + nature + "')";
+    System::String^ query = "SET IDENTITY_INSERT [dbo].[Article] ON; INSERT INTO Article (nom, quantite_article, nature, Ref_produit) VALUES ('" + nom + "', '" + quantite_article + "', '" + nature + "', " + ref_article + ")";
     database->ExecuteQuery(query);
 }
 
@@ -68,7 +68,7 @@ void Article::modifier()
     }
 
     // Assurez-vous que vous avez des conditions à mettre à jour
-    query += " WHERE ref_article = '" + ref_article + "';";
+    query += " WHERE Ref_produit = '" + ref_article + "';";
     database->ExecuteQuery(query);
 
 }
@@ -77,7 +77,7 @@ void Article::modifier()
 void Article::supprimer()
 {
     CLDataBase^ database = gcnew CLDataBase();
-    System::String^ query = "DELETE FROM Article WHERE ref_article = '" + ref_article + "';";
+    System::String^ query = "DELETE FROM Article WHERE Ref_produit = '" + ref_article + "';";
     database->ExecuteQuery(query);
 }
 
