@@ -16,3 +16,7 @@ C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\x64\Debug\
 C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\x64\Debug\ProjetPOO.Adresse_client.resources
 C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\x64\Debug\ProjetPOO.GestionCommande.resources
 C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\x64\Debug\ProjetPOO.GestionArticle.resources
+C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\x64\Debug\ProjetPOO.Adresse_client.resources
+C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\x64\Debug\ProjetPOO.GestionClient.resources
+C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\x64\Debug\ProjetPOO.GestionCommande.resources
+C:\Users\Loan\source\repos\Projet_POO\Projet_POO\Projet_POO\x64\Debug\ProjetPOO.GestionArticle.resources

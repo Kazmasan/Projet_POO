@@ -2,7 +2,7 @@
 
 CLDataBase::CLDataBase()
 {
-    connection = gcnew System::Data::SqlClient::SqlConnection("Initial Catalog =Pipo2;User ID =sa; Password=azerty");
+    connection = gcnew System::Data::SqlClient::SqlConnection("Initial Catalog =PIPO;User ID =sa; Password=azerty");
 }
 
 CLDataBase::~CLDataBase()
