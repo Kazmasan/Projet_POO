@@ -1,7 +1,7 @@
 #pragma once
 #include "Gestion.h"
 
-ref class Stock : public Gestion
+ref class Article : public Gestion
 {
 private:
 	System::String^ nom;

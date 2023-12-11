@@ -5,20 +5,20 @@ using namespace System::Collections::Generic;
 ref class Adresse : public Gestion
 {
 private:
-	int idAdresse;
 	String^ rue;
 	String^ ville;
 	String^ codePostal;
 	String^ pays;
 	int idClient;
 	String^ type;
+	int^ id_adresse;
 public:
 	virtual void rafraichir(System::Windows::Forms::DataGridView^ data) override;
 	virtual void afficher(System::Windows::Forms::DataGridView^ data) override;
 	virtual void ajouter() override;
 	virtual void modifier() override;
 	virtual void supprimer() override;
-	void setIdAdresse(int);
+	void setIdAdresse(int^);
 	void setRue(String^);
 	void setVille(String^);
 	void setCodePostal(String^);

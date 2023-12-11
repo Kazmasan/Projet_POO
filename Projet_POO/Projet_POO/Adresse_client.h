@@ -355,6 +355,7 @@ private: System::Void btn_ajouter_Click(System::Object^ sender, System::EventArg
 
 	adresse->setIdClient(id);
 	adresse->ajouter();
+	adresse->rafraichir(dataGridView1);
 
 }
 private: System::Void btn_modif_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -364,13 +365,14 @@ private: System::Void btn_modif_Click(System::Object^ sender, System::EventArgs^
 	adresse->setPays(txt_pays->Text);
 	adresse->setRue(txt_rue->Text);
 	adresse->setType(type->Text);
-
 	adresse->setIdClient(id);
 	adresse->modifier();
+	adresse->rafraichir(dataGridView1);
 }
 private: System::Void btn_suppr_Click(System::Object^ sender, System::EventArgs^ e) {
 	adresse->setIdAdresse(Convert::ToInt32(txt_idadresse->Text));
 	adresse->supprimer();
+	adresse->rafraichir(dataGridView1);
 }
 };
 }

@@ -126,6 +126,7 @@
     <ClCompile Include="Client.cpp" />
     <ClCompile Include="Gestion.cpp" />
     <ClCompile Include="Gestionclient.cpp" />
+    <ClCompile Include="GestionCommande.cpp" />
     <ClCompile Include="GestionPersonnel.cpp" />
     <ClCompile Include="GestionStock.cpp" />
     <ClCompile Include="MyForm.cpp" />
@@ -143,17 +144,20 @@
     <ClInclude Include="GestionClient.h">
       <FileType>CppControl</FileType>
     </ClInclude>
+    <ClInclude Include="GestionCommande.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
     <ClInclude Include="GestionPersonnel.h">
       <FileType>CppControl</FileType>
     </ClInclude>
-    <ClInclude Include="GestionStock.h">
+    <ClInclude Include="GestionArticle.h">
       <FileType>CppControl</FileType>
     </ClInclude>
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Personnel.h" />
-    <ClInclude Include="Stock.h" />
+    <ClInclude Include="Article.h" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Adresse_client.resx">
@@ -162,11 +166,14 @@
     <EmbeddedResource Include="GestionClient.resx">
       <DependentUpon>GestionClient.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GestionCommande.resx">
+      <DependentUpon>GestionCommande.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GestionPersonnel.resx">
       <DependentUpon>GestionPersonnel.h</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GestionStock.resx">
-      <DependentUpon>GestionStock.h</DependentUpon>
+    <EmbeddedResource Include="GestionArticle.resx">
+      <DependentUpon>GestionArticle.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MyForm.resx">
       <DependentUpon>MyForm.h</DependentUpon>

@@ -389,7 +389,9 @@ private: System::Void dataGridView1_CellContentDoubleClick(System::Object^ sende
 		textBox_Nom->Text = selectedRow->Cells["Nom"]->Value->ToString();  // Remplacez "Nom" par le nom de la colonne
 		textBox_Prenom->Text = selectedRow->Cells["Prenom"]->Value->ToString();  // Remplacez "Prenom" par le nom de la colonne
 		textBox_Id_superieur->Text = selectedRow->Cells["Id_superieur"]->Value->ToString();  // Remplacez "Id_superieur" par le nom de la colonne
-		textBox_Date_Embauche->Text = selectedRow->Cells["Date_embauche"]->Value->ToString();  // Remplacez "Date_embauche" par le nom de la colonne
+		String^ date = selectedRow->Cells["Date_embauche"]->Value->ToString();
+		String^ texteTronque = date->Substring(0, date->Length - 9);
+		textBox_Date_Embauche->Text = texteTronque;
 		textBox_adresse->Text = selectedRow->Cells["Adresse"]->Value->ToString();  // Remplacez "Adresse" par le nom de la colonne
 	}
 }

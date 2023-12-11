@@ -269,7 +269,7 @@ namespace ProjetPOO {
 			this->indic_date->Name = L"indic_date";
 			this->indic_date->Size = System::Drawing::Size(69, 13);
 			this->indic_date->TabIndex = 19;
-			this->indic_date->Text = L"AAAA-MM-JJ";
+			this->indic_date->Text = L"JJ-MM-AAAA";
 			// 
 			// btn_adresse
 			// 
@@ -306,7 +306,6 @@ namespace ProjetPOO {
 			this->MinimumSize = System::Drawing::Size(425, 406);
 			this->Name = L"Gestionclient";
 			this->Size = System::Drawing::Size(425, 406);
-			this->Load += gcnew System::EventHandler(this, &Gestionclient::Gestionclient_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
@@ -344,6 +343,7 @@ private: System::Void btn_ajouter_Click(System::Object^ sender, System::EventArg
 		fctn->setNaissance(txt_anniv->Text);
 		fctn->ajouter();
 		clear();
+		fctn->rafraichir(dataGridView1);
 	}
 	else
 	{
@@ -360,6 +360,7 @@ private: System::Void btn_suppr_Click(System::Object^ sender, System::EventArgs^
 		fctn->setId(txt_id->Text);
 		fctn->supprimer();
 		clear();
+		fctn->rafraichir(dataGridView1);
 	}
 	else
 	{
@@ -376,6 +377,7 @@ private: System::Void btn_modif_Click(System::Object^ sender, System::EventArgs^
 		fctn->setNaissance(txt_anniv->Text);
 		fctn->modifier();
 		clear();
+		fctn->rafraichir(dataGridView1);
 	}
 	else
 	{
@@ -423,7 +425,6 @@ private: System::Void dataGridView1_CellContentDoubleClick(System::Object^ sende
 		adresse->Show();
 
 	}
-private: System::Void Gestionclient_Load(System::Object^ sender, System::EventArgs^ e) {
-}
+
 };
 }

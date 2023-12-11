@@ -1,7 +1,8 @@
   ProjetPOO.Adresse_client.resources - Embedded, ContainedInManifestFile, 
   ProjetPOO.GestionClient.resources - Embedded, ContainedInManifestFile, 
+  ProjetPOO.GestionCommande.resources - Embedded, ContainedInManifestFile, 
   ProjetPOO.GestionPersonnel.resources - Embedded, ContainedInManifestFile, 
-  ProjetPOO.GestionStock.resources - Embedded, ContainedInManifestFile, 
+  ProjetPOO.GestionArticle.resources - Embedded, ContainedInManifestFile, 
   ProjetPOO.MyForm.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly Projet_POO, Version=0.0.*, Culture=Langue indifférente (Pays indifférent): 
@@ -26,10 +27,13 @@ Class ProjetPOO.Gestionclient: AutoLayout, AnsiClass, Class, Public, BeforeField
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Methods:
     clear(): PrivateScope, Public, HideBySig
+Class ProjetPOO.GestionCommande: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class ProjetPOO.GestionPersonnel: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.UserControl
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-Class ProjetPOO.GestionStock: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+Class ProjetPOO.GestionArticle: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.UserControl
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Methods:

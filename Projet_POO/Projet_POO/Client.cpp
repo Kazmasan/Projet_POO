@@ -42,7 +42,7 @@ void Client::afficher(System::Windows::Forms::DataGridView^ data)
 void Client::ajouter()
 {
    CLDataBase^ database = gcnew CLDataBase();
-	System::String^ query = "INSERT INTO Client (nom, prenom, Date_naissance) VALUES ('" + nom + "', '" + prenom + "', '" + naissance + "')";
+	System::String^ query = "INSERT INTO Client (Nom, Prenom, Date_naissance) VALUES ('" + nom + "', '" + prenom + "', '" + naissance + "')";
 	database->ExecuteQuery(query);
 }
     

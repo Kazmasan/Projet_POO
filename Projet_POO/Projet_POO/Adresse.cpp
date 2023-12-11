@@ -12,7 +12,6 @@ void Adresse::rafraichir(System::Windows::Forms::DataGridView^ data){
 void Adresse::ajouter() {
 
 	System::String^ query = "INSERT INTO Adresse_client (Adresse, Ville, Code_Postal, Pays, Type, Num_client) VALUES ('" + this->rue + "', '" + this->ville + "', '" + this->codePostal + "', '" + this->pays + "', '" + this->type + "', " + this->idClient + ")";
-    System::Windows::Forms::MessageBox::Show("query");
     CLDataBase^ database = gcnew CLDataBase();
 	database->ExecuteQuery(query);
 }
@@ -57,8 +56,7 @@ void Adresse::modifier() {
     }
 
     // Ajouter la condition WHERE pour l'ID
-    query += " WHERE Num_client = " + this->idClient;
-
+    query += " WHERE Id_adresse = " + this->id_adresse;
     CLDataBase^ database = gcnew CLDataBase();
     database->ExecuteQuery(query);
 
@@ -67,7 +65,7 @@ void Adresse::modifier() {
 
 void Adresse::supprimer() {
 
-	System::String^ query = "DELETE FROM Adresse_client WHERE ID_Adresse = " + this->idAdresse;
+	System::String^ query = "DELETE FROM Adresse_client WHERE ID_Adresse = " + this->id_adresse;
     CLDataBase^ database = gcnew CLDataBase();
 	database->ExecuteQuery(query);
 }
@@ -101,9 +99,9 @@ void Adresse::setPays(String^ adresse)
 	this->pays = adresse;
 }
 
-void Adresse::setIdAdresse(int adresse)
+void Adresse::setIdAdresse(int^ adresse)
 {
-	this->idAdresse = adresse;
+	this-> id_adresse = adresse;
 }
 
 void Adresse::setIdClient(int id)

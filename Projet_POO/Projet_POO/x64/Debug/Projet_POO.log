@@ -1,54 +1,6 @@
-﻿  Adresse.cpp
-C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\gestion.h(2,11): warning C4570: 'Gestion' : n'est pas explicitement déclaré comme abstract mais comporte des fonctions abstract
-  (compiler le fichier source 'Adresse.cpp')
-  C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\gestion.h(2,11):
-  'void Gestion::afficher(System::Windows::Forms::DataGridView ^)' : est abstrait
-  C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\gestion.h(6,15):
-  voir la déclaration de 'Gestion::afficher'
-  C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\gestion.h(2,11):
-  'void Gestion::rafraichir(System::Windows::Forms::DataGridView ^)' : est abstrait
-  C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\gestion.h(7,15):
-  voir la déclaration de 'Gestion::rafraichir'
-  C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\gestion.h(2,11):
-  'void Gestion::ajouter(void)' : est abstrait
-  C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\gestion.h(8,15):
-  voir la déclaration de 'Gestion::ajouter'
-  C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\gestion.h(2,11):
-  'void Gestion::modifier(void)' : est abstrait
-  C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\gestion.h(9,15):
-  voir la déclaration de 'Gestion::modifier'
-  C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\gestion.h(2,11):
-  'void Gestion::supprimer(void)' : est abstrait
-  C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\gestion.h(10,15):
-  voir la déclaration de 'Gestion::supprimer'
-  
-  Adresse_client.cpp
-C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\gestion.h(2,11): warning C4570: 'Gestion' : n'est pas explicitement déclaré comme abstract mais comporte des fonctions abstract
-  (compiler le fichier source 'Adresse_client.cpp')
-  C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\gestion.h(2,11):
-  'void Gestion::afficher(System::Windows::Forms::DataGridView ^)' : est abstrait
-  C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\gestion.h(6,15):
-  voir la déclaration de 'Gestion::afficher'
-  C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\gestion.h(2,11):
-  'void Gestion::rafraichir(System::Windows::Forms::DataGridView ^)' : est abstrait
-  C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\gestion.h(7,15):
-  voir la déclaration de 'Gestion::rafraichir'
-  C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\gestion.h(2,11):
-  'void Gestion::ajouter(void)' : est abstrait
-  C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\gestion.h(8,15):
-  voir la déclaration de 'Gestion::ajouter'
-  C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\gestion.h(2,11):
-  'void Gestion::modifier(void)' : est abstrait
-  C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\gestion.h(9,15):
-  voir la déclaration de 'Gestion::modifier'
-  C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\gestion.h(2,11):
-  'void Gestion::supprimer(void)' : est abstrait
-  C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\gestion.h(10,15):
-  voir la déclaration de 'Gestion::supprimer'
-  
-  Gestionclient.cpp
+﻿  GestionStock.cpp
 C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\Gestion.h(2,11): warning C4570: 'Gestion' : n'est pas explicitement déclaré comme abstract mais comporte des fonctions abstract
-  (compiler le fichier source 'Gestionclient.cpp')
+  (compiler le fichier source 'GestionStock.cpp')
   C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\Gestion.h(2,11):
   'void Gestion::afficher(System::Windows::Forms::DataGridView ^)' : est abstrait
   C:\Users\kazma\source\repos\Kazmasan\Projet_POO\Projet_POO\Projet_POO\Gestion.h(6,15):
