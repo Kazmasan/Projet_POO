@@ -124,6 +124,7 @@
     <ClCompile Include="Adresse_client.cpp" />
     <ClCompile Include="CLDataBase.cpp" />
     <ClCompile Include="Client.cpp" />
+    <ClCompile Include="Commande.cpp" />
     <ClCompile Include="Gestion.cpp" />
     <ClCompile Include="Gestionclient.cpp" />
     <ClCompile Include="GestionCommande.cpp" />
@@ -140,6 +141,7 @@
     </ClInclude>
     <ClInclude Include="CLDataBase.h" />
     <ClInclude Include="Client.h" />
+    <ClInclude Include="Commande.h" />
     <ClInclude Include="Gestion.h" />
     <ClInclude Include="GestionClient.h">
       <FileType>CppControl</FileType>
